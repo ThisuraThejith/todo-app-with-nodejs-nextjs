@@ -76,6 +76,7 @@ export default function Home(props) {
 				headers: props.headers
 			  }).then(() => {
 				setTasks((prev) => prev.filter((t) => t.id !== task.id));
+				setTask({ name: "" });
 			  })
 		} catch (error) {
 			console.log(error);
