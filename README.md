@@ -19,6 +19,7 @@ Then you can up the frontend app by running,
 ```bash
 npm run dev
 ```
+You can access the frontend app after doing the above steps by navigaing to http://localhost:3000/
 
 ### Backend
 
