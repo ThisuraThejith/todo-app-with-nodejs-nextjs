@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
 import styles from "../styles/Home.module.css";
@@ -83,8 +84,16 @@ export default function Home(props) {
 		}
 	};
 
+	const signOut = (e) => {
+		document.cookie = "authtoken= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
+		document.cookie = "userId= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
+	};
+
 	return (
 		<main className={styles.main}>
+			<div className={styles.sign_out_button_wrapper}>
+				<Link href="/signin"><h4 onClick={signOut} ><span>Sign Out</span></h4></Link>
+			</div>
 			<h1 className={styles.heading}>TO-DO</h1>
 			<div className={styles.container}>
 				<form onSubmit={addTask} className={styles.form_container}>

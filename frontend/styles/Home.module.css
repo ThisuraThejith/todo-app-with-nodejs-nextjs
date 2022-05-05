@@ -1,6 +1,7 @@
 .main {
 	width: 100vw;
 	min-height: 100vh;
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -145,5 +146,25 @@
 }
 
 .credential_footer_text {
-	color: cornflowerblue;
+	color: rgb(90, 140, 231);
+}
+
+.sign_out_button_wrapper {
+    width: 100%;
+    padding: 0 35px 0 15px;
+	position: fixed;
+	top: 0;
+}
+
+.sign_out_button_wrapper h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sign_out_button_wrapper h4 span {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+	color: #252525a4;
 }
