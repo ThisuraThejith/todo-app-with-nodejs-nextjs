@@ -33,7 +33,7 @@ After installing the dependencies, navigate in to the <b>app/config</b> director
 Then you can up the backend server by running,
 
 ```bash
-node server.js
+npm start
 ```
 
 Once the server is up all the database tables will be created and meta data for the tables will be added.
